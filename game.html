@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexprism - Game Development</title>
+    <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/fancybox.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/images/favicon.png">
+
+    <style>
+        .image01{
+            width: 100% !important;
+        }
+        .man001{
+            font-size: 40px !important;
+        }
+        .logo368{
+    width: 240px;
+}
+
+.logo369{
+    width: 200px;
+}
+    </style>
+
+</head>
+<body>
+
+   
+    <div class="preloader">
+        <div class="loader">
+            <svg class="pl" viewBox="0 0 128 128" width="128px" height="128px" xmlns="http://www.w3.org/2000/svg">
+                <g fill="none" stroke-linecap="round" stroke-width="16" transform="rotate(-90,64,64)">
+                    <circle class="pl__ring" r="56" cx="64" cy="64" stroke="#ddd" />
+                    <circle class="pl__worm pl__worm--moving" r="56" cx="64" cy="64" stroke="currentColor" stroke-dasharray="22 307.86 22" data-worm />
+                </g>
+                <g data-particles></g>
+            </svg>
+        </div>
+    </div>
+   
+    <div class="mouseCursor cursor-outer"></div>
+    <div class="mouseCursor cursor-inner"><span>Drag</span></div>
+   
+    <header class="header-section position-relative z-2 header-sticky">
+        <div class="container">
+            <div class="infobar py-2 d-none d-lg-block">
+                <div class="row g-4 align-items-center justify-content-between">
+                    <div class="col-xl-6 col-lg-7">
+                        <div class="infobar-content d-flex align-items-center">
+                            <a href="tel:+91 7017555349" class="mb-0 text-white fs-sm fw-semibold"><span class="me-2"><i class="fa-solid fa-phone"></i></span>+91 7017555349</a>
+                            <p class="text-white fs-sm mb-0 fw-semibold"><span class="me-2"><i class="fa-solid fa-location-dot"></i></span>Mathura, Surat</p>
+                            <a href="mailto:info@crete.com" class="text-white fw-semibold fs-sm"><span class="me-2"><i class="fa-solid fa-envelope"></i></span>info@nexprism.com</a>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-5">
+                        <div class="d-flex align-items-center justify-content-end gap-5 infobar-right">
+                            <div class="language-switcher">
+                                <select class="nice_select bg-transparent list-headings-color">
+                                    <option value="English">English</option>
+                                    <option value="Hindi">Hindi</option>
+                                </select>
+                            </div>
+                            <div class="info-social border-left header-icons-white">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="crete-navbar bg-white">
+                <div class="row align-items-center">
+                    <div class="col-lg-2 col-6">
+                        <div class="logo-wrapper">
+                            <a href="index.html"><img src="assets/logo01.png" alt="logo" class="img-fluid"></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-7 col-lg-9 d-none d-lg-block">
+                        <nav class="crete-navmenu text-center ps-xl-5">
+                            <ul>
+                                <li>
+                                    <a href="index.html">Home</a>
+                                   
+                                </li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li class="has-submenu">
+                                    <a href="javascript:void(0)">Services</a>
+                                    <ul class="submenu-wrapper">
+                                        <li><a href="ui.html">UI/UX Design</a></li>
+                                        <li><a href="web.html">Web Development</a></li>
+                                        <li><a href="app.html">App Development</a></li>
+                                        <li><a href="mlm.html">MLM Development</a></li>
+                                        <li><a href="game.html">Game Development</a></li>
+                                        <li><a href="graphics.html">Graphics Design</a></li>
+                                        <li><a href="seo.html">SEO Optimization</a></li>
+                                        <li><a href="digital.html">Digital Marketing</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-submenu">
+                                    <a href="javascript:void(0)">Digital Products</a>
+                                    <ul class="submenu-wrapper">
+                                        <li><a href="cloud.html">Cloud Whatsapp Solutions</a></li>
+                                        <li><a href="erp.html">ERP Solutions</a></li>
+                                        <li><a href="crm.html">CRM Solutions</a></li>
+                                        <li><a href="ivr.html">IVR Solutions</a></li>
+                                        <li><a href="ecom.html">E-Commerce Solutions</a></li>
+                                    </ul>
+                                </li>
+                               
+                                <li><a href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-xl-3 col-lg-1 col-6">
+                        <div class="text-end d-flex align-items-center justify-content-end header-right gap-3">
+                            <a href="contact.html" class="template-btn primary-btn d-none d-sm-block d-lg-none d-xl-block text-center">Get CallRequest</a>
+                            
+                            <button type="button" class="header-toggle mobile-menu-toggle d-lg-none">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="mobile-menu">
+        <a href="javascript:void(0)" class="close"><i class="fas fa-xmark"></i></a>
+        <a href="#"><img src="assets/logo01.png" alt="logo" class="img-fluid logo369"></a>
+        <ul class="mobile-nav-menu">
+            <li>
+                <a href="index.html">Home</a>
+               
+            </li>
+            <li><a href="about.html">About Us</a></li>
+            <li class="has-submenu">
+                <a href="javascript:void(0)">Services</a>
+                <i class="fas fa-angle-down"></i>
+                <ul class="submenu-wrapper">
+                    <li><a href="ui.html">UI/UX Design</a></li>
+                    <li><a href="web.html">Web Development</a></li>
+                    <li><a href="app.html">App Development</a></li>
+                    <li><a href="mlm.html">MLM Development</a></li>
+                    <li><a href="game.html">Game Development</a></li>
+                    <li><a href="graphics.html">Graphics Design</a></li>
+                    <li><a href="seo.html">SEO Optimization</a></li>
+                    <li><a href="digital.html">Digital Marketing</a></li>
+                </ul>
+            </li>
+            <li class="has-submenu">
+                <a href="javascript:void(0)">Digital Products</a>
+                <i class="fas fa-angle-down"></i>
+                <ul class="submenu-wrapper">
+                    <li><a href="cloud.html">Cloud Whatsapp Solutions</a></li>
+                    <li><a href="erp.html">ERP Solutions</a></li>
+                    <li><a href="crm.html">CRM Solutions</a></li>
+                    <li><a href="ivr.html">IVR Solutions</a></li>
+                    <li><a href="ecom.html">E-Commerce Solutions</a></li>
+                </ul>
+            </li>
+           
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+       
+    </div>
+
+    
+
+    
+    <div class="breadcrumb-section position-relative z-1 overflow-hidden" data-background="assets/images/banner/breadcrumb.jpg">
+        <span class="circle-shape-1 rounded-circle position-absolute"></span>
+        <span class="circle-shape-2 rounded-circle position-absolute"></span>
+        <span class="circle-shape-3 rounded-circle position-absolute"></span>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcrumb-content">
+                        <h1 class="text-white mb-3 display-2 fw-bold">Services</h1>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li>Game Development</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <section class="exp-section ptb-100 overflow-hidden">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-xl-6 col-lg-6">
+                    <div class="image-wrapper">
+                        <img src="assets/ui.gif" alt="about" class="image01">
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6">
+                    <div class="exp-content-right">
+                        <span class="cr-subtitle position-relative primary-text-color fw-semibold">Game Development</span>
+                        <h2 class="mt-4 mb-3 man001"> Leading Provider of <span class="primary-bg-light primary-text-color">
+                            Game Development 
+                        </span>Services</h2>
+                        <p class="mb-40">
+                            
+As a top-rated game development company, we specialize in creating cutting-edge games for PC, mobile, consoles, and web platforms. Our skilled team of developers is adept at working with multiple game engines, striving to create desirable products that match our clients' requirements. With a focus on innovation and quality, we aim to deliver immersive gaming experiences that captivate audiences worldwide.
+                        </p>
+                        
+                        <div class="d-flex align-items-center gap-3 gap-sm-4 flex-wrap">
+                            <a href="contact.html" class="template-btn primary-btn">Get a Free Demo</a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="cr2-brand-n-service bg-light-white pt-100 position-relative z-1 overflow-hidden">
+        <span class="circle-shape-1 rounded-circle position-absolute z--1"></span>
+        <span class="circle-shape-2 rounded-circle position-absolute z--1"></span>
+        
+        <div class="hm2-service-section pb-100 overflow-hidden">
+            <div class="container  position-relative z-1">
+                <img src="assets/images/shapes/net-vector.png" class="position-absolute net-vector top-0 end-0 z--1" alt="vector">
+                <div class="row justify-content-center">
+                    <div class="col-xl-7">
+                        <div class="text-center">
+                             
+                <h2 class="mb-5 mt-4 wow fadeInUp">Our <span class="primary-bg-light primary-text-color"> Game Development</span> Services & Solutions</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="hm2-service-box text-center text-lg-start wow fadeInUp h-100">
+                            <span class="icon-wrapper"> 
+                                <img src="assets/mg.png" alt="icon" class="img-fluid">
+                            </span>
+                            <h6 class="mt-32">Mobile Games</h6>
+                            <p class="mb-32 mt-4 fw-medium">
+                                Explore our diverse range of Mobile Games, designed for enjoyable gameplay anytime, anywhere. Each game offers unique features and engaging experiences suitable for players of all ages and interests.
+                            </p>
+                           
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="hm2-service-box text-center text-lg-start wow fadeInUp h-100" data-wow-delay="0.1s">
+                            <span class="icon-wrapper"> 
+                                <img src="assets/pcg.png" alt="icon" class="img-fluid">
+                            </span>
+                            <h6 class="mt-32">PC Games</h6>
+                            <p class="mb-32 mt-4 fw-medium">
+                                Dive into our extensive lineup of PC Games, meticulously crafted for immersive experiences on desktop platforms. Each title offers diverse gameplay mechanics and captivating narratives, ensuring endless entertainment for gamers of all levels.
+                            </p>
+                           
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="hm2-service-box text-center text-lg-start wow fadeInUp h-100" data-wow-delay="0.2s">
+                            <span class="icon-wrapper"> 
+                                <img src="assets/cas.png" alt="icon" class="img-fluid">
+                            </span>
+                            <h6 class="mt-32">Casino Games</h6>
+                            <p class="mb-32 mt-4 fw-medium">
+                                Explore our dynamic selection of Casino Games, designed for thrilling entertainment and excitement. Each game offers an immersive casino experience, featuring a variety of classic and innovative titles for players to enjoy.
+                            </p>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="hm2-service-box text-center text-lg-start wow fadeInUp h-100" data-wow-delay="0.3s">
+                            <span class="icon-wrapper"> 
+                                <img src="assets/fantasy.png" alt="icon" class="img-fluid">
+                            </span>
+                            <h6 class="mt-32">Fantasy Games</h6>
+                            <p class="mb-32 mt-4 fw-medium">
+                                Embark on epic adventures with our Fantasy Games collection, crafted to transport players to magical realms and thrilling quests. Each game offers immersive storytelling and intricate worlds to explore, providing endless entertainment for fantasy enthusiasts of all ages.
+                            </p>
+                           
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="hm2-service-box text-center text-lg-start wow fadeInUp h-100" data-wow-delay="0.4s">
+                            <span class="icon-wrapper"> 
+                                <img src="assets/vrgames.png" alt="icon" class="img-fluid">
+                            </span>
+                            <h6 class="mt-32">AR/VR Games</h6>
+                            <p class="mb-32 mt-4 fw-medium">
+                                Immerse yourself in groundbreaking experiences with our AR/VR Games, designed to blur the lines between reality and virtual worlds. Each title offers innovative gameplay and immersive environments, delivering unparalleled entertainment for players seeking cutting-edge gaming experiences.
+                            </p>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="hm2-service-box text-center text-lg-start wow fadeInUp h-100" data-wow-delay="0.5s">
+                            <span class="icon-wrapper"> 
+                                <img src="assets/html.png" alt="icon" class="img-fluid">
+                            </span>
+                            <h6 class="mt-32">HTML5 Games</h6>
+                            <p class="mb-32 mt-4 fw-medium">
+                                Experience seamless gaming with our HTML5 Games, optimized for smooth performance across various devices and platforms. Each title features intuitive controls and addictive gameplay, offering endless entertainment for players on web browsers and mobile devices alike.
+                            </p>
+                          
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <div class="hm3-ticker-section position-relative overflow-hidden z-1 hm3-light-bg">
+        <span class="ticker-shape"></span>
+        <div class="ur-ticker-box overflow-hidden">
+            <div class="ur-ticker-wrapper primary-bg-color">
+                <div class="ur-ticker">
+                    <span class="text-white text-uppercase"><i class="fas fa-star me-2"></i>Games We Provide</span>
+                    <span class="text-white text-uppercase"><i class="fas fa-star me-2"></i>Mobile Games</span>
+                    <span class="text-white text-uppercase"><i class="fas fa-star me-2"></i>PC Games</span>
+                    <span class="text-white text-uppercase"><i class="fas fa-star me-2"></i>Casino Games</span>
+                    <span class="text-white text-uppercase"><i class="fas fa-star me-2"></i>Fantasy Games</span>
+                    <span class="text-white text-uppercase"><i class="fas fa-star me-2"></i>AR/VR Games</span>
+                    <span class="text-white text-uppercase"><i class="fas fa-star me-2"></i>HTML5 Games</span>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <section class="service-section ptb-100 bg-light-white">
+        <div class="container">
+            <div class="text-center">
+                             
+                <h2 class="mb-0 mt-4 mb-5 wow fadeInUp">Our Specialized Game Development Tools & Technologies</h2>
+                        </div>
+            <div class="row justify-content-center g-4">
+                <div class="hm2-service-slider slider-spacing mt-60">
+                    <div class="hm2-service-box h-100">
+                        <span class="icon-wrapper"> 
+                            <img src="assets/ur.png" alt="icon" class="img-fluid">
+                        </span>
+                        <h6 class="mt-32">Unreal Engine</h6>
+                        <p class="mb-32 mt-4 fw-medium">
+                            
+Our team specializes in crafting immersive gaming experiences using cutting-edge technology. With expertise in Unreal Engine Game Development, we bring to life stunning visuals, lifelike animations, and dynamic physics, delivering an unparalleled gaming adventure.
+                        </p>
+                        
+                    </div>
+                    <div class="hm2-service-box h-100">
+                        <span class="icon-wrapper"> 
+                            <img src="assets/uni.png" alt="icon" class="img-fluid">
+                        </span>
+                        <h6 class="mt-32">Unity</h6>
+                        <p class="mb-32 mt-4 fw-medium">
+                            We specialize in Unity Game Development, leveraging its cross-platform capabilities to create responsive 2D/3D games. Our expertise extends to multiple platforms and technologies, ensuring immersive gaming experiences tailored to the unique needs of our clients.
+                        </p>
+                        
+                    </div>
+                    <div class="hm2-service-box">
+                        <span class="icon-wrapper"> 
+                            <img src="assets/html5.png" alt="icon" class="img-fluid">
+                        </span>
+                        <h6 class="mt-32">HTML5</h6>
+                        <p class="mb-32 mt-4 fw-medium">
+                            HTML5 stands out as an accessible programming language, tailored for crafting browser-based and indie games, especially ideal for smaller projects like table games, slots, and card games. Its user-friendly nature and versatility make it an excellent choice for game development endeavors.
+                       
+                    </div>
+
+                    <div class="hm2-service-box">
+                        <span class="icon-wrapper"> 
+                            <img src="assets/sw.png" alt="icon" class="img-fluid">
+                        </span>
+                        <h6 class="mt-32">Swift</h6>
+                        <p class="mb-32 mt-4 fw-medium">
+                            Apple's creation of an open-source programming language tailored for iPhone and iPad game development offers a powerful toolset. With robust support for iOS and MacOS platforms, developers can unleash their creativity to build diverse and engaging gaming experiences.
+                        </p>
+                       
+                    </div>
+
+
+                </div> 
+            </div>
+        </div>
+    </section>
+    
+    <div class="cr2-footer-brands">
+        <div class="container">
+            <div class="cr2-footer-brand-slider">
+                <span class="text-white fs-sm text-uppercase fw-bold">Facebook</span>
+                <span class="text-white fs-sm text-uppercase fw-bold">Instagram</span>
+                <span class="text-white fs-sm text-uppercase fw-bold">Twitter</span>
+                <span class="text-white fs-sm text-uppercase fw-bold">Discord</span>
+                <span class="text-white fs-sm text-uppercase fw-bold">Pinterest</span>
+                <span class="text-white fs-sm text-uppercase fw-bold">Skype</span>
+                <span class="text-white fs-sm text-uppercase fw-bold">Slack</span>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer-style-2 overflow-hidden position-relative z-1">
+        <span class="circle-shape-1 position-absolute z--1 rounded-circle"></span>
+        <span class="circle-shape-2 position-absolute z--1 rounded-circle"></span>
+        <div class="footer-bottom pt-100">
+            <div class="container position-relative z-1">
+                <div class="row g-4">
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="footer-widget text-widget">
+                            <img src="assets/flogo.png" alt="logo" class="img-fluid logo368">
+                            <p class="my-32 text-white">
+                                Explore our holistic approach for your business needs, covering strategy, implementation, and optimization for maximum impact.
+                            </p> 
+                            <div class="footer-social">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-md-6">
+                        <div class="footer-widget nav-widget">
+                            <h6 class="widget-title">Quick Links</h6>
+                            <ul class="footer-links">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-md-6">
+                        <div class="footer-widget nav-widget">
+                            <h6 class="widget-title">Services</h6>
+                            <ul class="footer-links">
+                                <li><a href="ui.html">UI/UX Design</a></li>
+                                <li><a href="web.html">Web Development</a></li>
+                                <li><a href="app.html">App Development</a></li>
+                                <li><a href="mlm.html">MLM Development</a></li>
+                                <li><a href="game.html">Game Development</a></li>
+                                <li><a href="graphics.html">Graphics Design</a></li>
+                                <li><a href="seo.html">SEO Optimization</a></li>
+                                <li><a href="digital.html">Digital Marketing</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="footer-widget footer-newsletter">
+                            <h6 class="widget-title">Sign up for the newsletter</h6>
+                            <form>
+                                <div class="newsletter-form d-flex align-items-center">
+                                    <input type="email" placeholder="Email address" class="theme-input">
+                                    <button type="submit" class="template-btn primary-btn">Sign Up</button>
+                                </div>
+                                <label class="text-white mt-4">
+                                    <span class="me-2 d-inline-block">
+                                        <input type="checkbox">
+                                        <span><i class="fas fa-check"></i></span>
+                                    </span>I'm okay with getting emails and having that tracked to improve my experience
+                                </label>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright mt-60 py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="copyright-text">
+                            <p class="mb-0 text-white">&copy;2024 Nexprism. All Rights Reserved</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="copyright-links">
+                            <a href="#">Privacy & Policy</a>
+                            <a href="#">Terms & Services</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+   
+    <button type="button" class="scroll-top-btn"><i class="fa-solid fa-angle-up"></i></button>
+    
+        <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+    <script src="assets/js/nice-select.js"></script>
+    <script src="assets/js/fancybox.js"></script>
+    <script src="assets/js/countdown.min.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/progress-bar.js"></script>
+    <script src="assets/js/parallax.js"></script>
+    <script src="assets/js/tilt-js.js"></script>
+    <script src="assets/js/magnific-popup.js"></script>
+    <script src="assets/js/waypoints.js"></script>
+    <script src="assets/js/counterup.min.js"></script>
+    <script src="assets/js/preloader.js"></script>
+    <script src="assets/js/isotop.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    
+</body>
+
+</html>
